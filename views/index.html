@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-237323594-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-237323594-1");
+    </script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Connecting with people" />
+    <meta
+      name="keywords"
+      content="forum, chat, social, facebook, instagram, twitter, youtube, linkedin, telegram, snapchat"
+    />
+    <meta name="author" content="Plurg Inc." />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
+    <link rel="stylesheet" type="text/css" href="css/media.css" />
+    <link rel="icon" type="image/png" href="./assets/icons/plug.png" />
+    <title>Plurg | Social Me</title>
+  </head>
+  <body>
+    <section class="home container">
+      <div class="home_cover">
+        <div class="broad top">
+          <label class="count"><b class="ac_count"></b> Online</label>
+          <hr />
+          <div class="top_topic">
+            <marquee
+              class="topic"
+              behavior="60%"
+              direction="left"
+              scrollamount="5"
+            >
+            </marquee>
+            <a href="#popup_topic"
+              ><img src="./assets/icons/edit.png" alt="" class="edit_btn"
+            /></a>
+          </div>
+        </div>
+        <div class="broad mid">
+          <ul class="thread"></ul>
+          <div class="input_container">
+            <input type="text" class="write_field" placeholder="Write..." />
+            <img src="./assets/icons/send.png" alt="" class="write_btn" />
+          </div>
+        </div>
+        <div class="broad bottom">
+          <a href="https://google.com" class="button add_btn" target="_blank"
+            >Install Extension</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <div id="popup_topic" class="overlay">
+      <div class="popup">
+        <h2>Change Topic</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="details add">
+          <input
+            type="email"
+            placeholder="Email"
+            class="inputs post_email"
+            autocomplete="on"
+            required
+          />
+          <h4 class="post_field_count">0/127</h4>
+          <textarea
+            type="text"
+            class="inputs post_content"
+            rows="5"
+            placeholder="Write..."
+            maxlength="127"
+          ></textarea>
+          <div class="progress"></div>
+          <p class="disclaimer">
+            Disclaimer: A small service fee of $0.99 would be required to
+            publish. Also USD will be converted to NGN before transaction.
+          </p>
+          <button class="popup_buttons proceed_btn">Proceed</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup_contact" class="overlay">
+      <div class="popup">
+        <h2>Contact Us</h2>
+        <a class="close" href="#contact">&times;</a>
+        <div class="details">
+          <p class="pop_msg">
+            Send us a mail for issues, suggestions, reports or inquiries:
+            <b>plurginc@gmail.com</b>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup_about" class="overlay">
+      <div class="popup">
+        <h2>About</h2>
+        <a class="close" href="#about">&times;</a>
+        <div class="details">
+          <p class="pop_msg">Connecting with people. Discuss daily topics</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup_msg" class="overlay">
+      <div class="popup">
+        <h2>Alert</h2>
+        <a class="close" href="#alert">&times;</a>
+        <div class="details">
+          <p class="pop_alert"></p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer" id="footer">
+      <div class="footer_links">
+        <a href="#popup_about" class="reach">About</a> |
+        <a href="policy.html" target="_blank" class="reach">Policy</a> |
+        <a href="#popup_contact" class="reach">Contact</a>
+      </div>
+      <h3 class="copyright">
+        Plurg Inc &#169; 2022 copyright all rights reserved
+      </h3>
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

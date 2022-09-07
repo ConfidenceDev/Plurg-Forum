@@ -1,0 +1,38 @@
+@media (max-width: 1024px) {
+  .home {
+    height: auto;
+    overflow: none;
+  }
+
+  .popup {
+    width: 60%;
+  }
+
+  .popup h3 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 524px) {
+  .home_cover {
+    min-width: 350px;
+    max-width: 350px;
+    overflow: none;
+  }
+
+  .home .button {
+    font-size: 0.7em;
+  }
+
+  .footer {
+    font-size: 0.9em;
+  }
+
+  .footer .footer_links {
+    column-gap: 20px;
+  }
+  .popup {
+    width: 90%;
+    overflow-y: scroll;
+  }
+}
