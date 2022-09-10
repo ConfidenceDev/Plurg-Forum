@@ -320,7 +320,7 @@ img {
 .footer .footer_links {
   display: flex;
   flex-direction: row;
-  column-gap: 40px;
+  column-gap: 20px;
   justify-content: center;
   align-items: center;
 }
