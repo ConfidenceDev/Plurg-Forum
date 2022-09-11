@@ -140,6 +140,7 @@ img {
   padding: 4px;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .home hr {
@@ -271,6 +272,8 @@ img {
 
 .home .bottom {
   width: 100%;
+  display: flex;
+  flex-direction: column;
   font-size: 1.5em;
   margin-bottom: 10px;
   text-align: center;
@@ -280,7 +283,7 @@ img {
   box-shadow: 0 3px 10px var(--dark-grey);
 }
 
-.home .button {
+.home .bottom .button {
   width: 100%;
   display: inline-block;
   background-color: var(--accent-color);
@@ -295,7 +298,13 @@ img {
   margin: 10px 0;
 }
 
-.home .button:hover {
+.home .bottom .mobile_btn {
+  padding: 1.25rem 1.5rem;
+  background-color: var(--secondary-light);
+  display: none;
+}
+
+.home .bottom .button:hover {
   transform: scale(1.02);
   opacity: 0.9;
   transition: transform 0.2s ease-in;

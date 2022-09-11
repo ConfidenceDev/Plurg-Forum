@@ -36,3 +36,9 @@
     overflow-y: scroll;
   }
 }
+
+@media (display-mode: standalone) {
+  .home .bottom .mobile_btn {
+    display: none;
+  }
+}

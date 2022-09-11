@@ -1,0 +1,30 @@
+{
+  "name": "Plurg",
+  "short_name": "Plurg",
+  "description": "Connecting with people",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#3e6981",
+  "theme_color": "#385361",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/icons/plug-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/plug-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/icons/plug-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

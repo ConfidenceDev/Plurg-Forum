@@ -24,10 +24,13 @@
       content="forum, chat, social, facebook, instagram, twitter, youtube, linkedin, telegram, snapchat"
     />
     <meta name="author" content="Plurg Inc." />
+    <meta name="theme-color" content="#385361" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/modal.css" />
     <link rel="stylesheet" type="text/css" href="css/media.css" />
+    <link rel="apple-touch-icon" href="assets/icons/plug-192.png" />
     <link rel="icon" type="image/png" href="./assets/icons/plug.png" />
+    <link rel="manifest" href="manifest.json" />
     <title>Plurg | Social Me</title>
   </head>
   <body>
@@ -44,7 +47,7 @@
               scrollamount="5"
             >
             </marquee>
-            <a href="#popup_topic"
+            <a href="#popup_topic" aria-label="Change topic"
               ><img src="./assets/icons/edit.png" alt="" class="edit_btn"
             /></a>
           </div>
@@ -61,8 +64,9 @@
             href="https://chrome.google.com/webstore/detail/plurg/okkckmldiolpfjignfpblddgmfbncpfl"
             class="button add_btn"
             target="_blank"
-            >Install Extension</a
+            >Install Web App</a
           >
+          <button class="button mobile_btn">Install on Mobile</button>
         </div>
       </div>
     </section>
@@ -132,16 +136,24 @@
 
     <footer class="footer" id="footer">
       <div class="footer_links">
-        <a href="#popup_about" class="reach">About</a> |
-        <a href="policy.html" target="_blank" class="reach">Policy</a> |
+        <a href="#popup_about" class="reach" aria-label="About">About</a> |
+        <a
+          href="policy.html"
+          target="_blank"
+          class="reach"
+          aria-label="Terms and Policy"
+          >Policy</a
+        >
+        |
         <a
           href="https://twitter.com/ConfidenceDev"
           target="_blank"
           class="reach"
+          aria-label="Twitter"
           >Twitter</a
         >
         |
-        <a href="#popup_contact" class="reach">Contact</a>
+        <a href="#popup_contact" class="reach" aria-label="Contact">Contact</a>
       </div>
       <h3 class="copyright">
         Plurg Inc &#169; 2022 copyright all rights reserved
