@@ -28,6 +28,10 @@
     font-size: 0.9em;
   }
 
+  .footer .footer_links .gap {
+    margin: 0 10px;
+  }
+
   .popup {
     width: 90%;
     overflow-y: scroll;
