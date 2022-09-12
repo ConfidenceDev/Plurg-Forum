@@ -329,7 +329,6 @@ img {
 .footer .footer_links {
   display: flex;
   flex-direction: row;
-  column-gap: 20px;
   justify-content: center;
   align-items: center;
 }
@@ -339,6 +338,10 @@ img {
   color: var(--secondary-light);
   transition: transform 0.2s ease-in;
   cursor: pointer;
+}
+
+.footer .footer_links .gap {
+  margin: 0 20px;
 }
 
 .footer .copyright {
